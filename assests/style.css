@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+:root{
+    --cor--primária: #052051;
+}
+
+.principais{
+    display: flex; 
+    height: 60px; 
+    align-items: center;
+
+} 
+
+.head{
+    background-color: var(--cor--primária); 
+    padding: 10px;
+}  
+
+.imagem_logo{
+    height: 50px;
+    width: 150px; 
+    
+}
+
+a{
+    text-decoration: none; 
+    color: white; 
+    display: flex;  
+    flex-direction: row;
+} 
+
+.link_principais{
+    display: flex;
+    
+}
