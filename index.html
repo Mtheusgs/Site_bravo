@@ -12,53 +12,72 @@
             <nav class="principais">   
                 <img class="imagem_logo" src="img/camada_5.png" alt="logo_bravo">  
                 <section class="links_principais">
-                    <a class="home" href="">Home</a>
-                    <a href="">Sobre</a>
-                    <a href="">Cursos</a>
-                    <a href="">Localização</a> 
+                    <a class="home" href="#cont_principal">Home</a>
+                    <a href="#cursos">Cursos</a>
+                    <a href="#DuasPartes">Sobre</a>
+                    <a href="#local">Localização</a>  
+                    <a href="">Comentários</a>
                     <a href="">Login</a>
                 </section>
             </nav>
         </div> 
-        <div class="cont_principal">  
+        <div id="cont_principal" class="cont_principal">  
             <div class="texto">
                 <h1 class="eslogam">
                     Os Bravos sempre saem na frente!
                 </h1>
                 <h2 class="complemento">
-                   O Bravo Cursos foi idealizado para ser um polo presencial, voltado para a aprovação em <strong>Concursos e vestibulares</strong>, e um local para facilitar o aprendizado de inumeras disciplinas.
+                   O Bravo Cursos foi idealizado para ser um polo presencial, voltado para a aprovação em <strong>Concursos e Vestibulares</strong>, e um local para facilitar o aprendizado de inumeras disciplinas.
                 </h2>
             </div>
             <img class="pessoa" src="img/Problem solving-amico.png" alt="">
         </div>
         <main >
-            <div class="duas_partes"> 
+            <div id="cursos" class="cursosDispo">
+                <h2 class="tituloCursos">Cursos Disponiveis</h2> 
+                <div class="todos">
+                    <section class="img_cursos1">
+                        <div class="bloco"></div>
+                        <div class="bloco"></div>
+                        <div class="bloco"></div>
+                    </section> 
+                    <a href="">----------------------------------------</a>
+                    <section class="img_cursos2">
+                        <div class="bloco"></div>
+                        <div class="bloco"></div>
+                    </section>
+                </div>
+            </div>
+            <div id="DuasPartes" class="duas_partes"> 
                 <div class="part1">
-                    <h1 class="titulo"> <li>Um pouco Sobre a gente</li></h1>
+                    <h2 class="titulo"> <li>Um pouco Sobre a gente</li></h1>
                     <div class="org">
                         <img class="img_missão" src="img/willer.png" alt="img_missao">
                         <section class="olho_da_empresa">
-                            <h1>Nossa Missão</h1>
-                            <p>Projetar os melhores computadores pessoais do mundo, levando a melhor experiência de computação pessoal a estudantes, educadores, profissionais criativos e consumidores do mundo todo.</p>
+                            <h1 id="mudarTitulo"></h1>
+                            <p id="textoMudavel"></p>
                         </section>
                     </div>
-                    <div class="org">
-                        <section class="olho_da_empresa">
-                            <h1>Nossos Valores</h1>
-                            <p>Projetar os melhores computadores pessoais do mundo, levando a melhor experiência de computação pessoal a estudantes, educadores, profissionais criativos e consumidores do mundo todo.</p>
-                        </section>
-                        <img src="" alt="img_missao">
+                </div>  
+                <aside class="parte2"> 
+                    <h2 id="local" class="ttloc"><ul><li>Localização</li></ul></h2>  
+                    <div class="mapBox"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.9590978787232!2d-60.69367658457058!3d2.8280595405819833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d9307a478d85437%3A0x593929b89832c0b6!2sBravo%20Cursos!5e0!3m2!1spt-BR!2sbr!4v1707677846227!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="org">
-                        <img src="" alt="img_missao">
-                        <section class="olho_da_empresa">
-                            <h1>Nossa Visão</h1>
-                            <p>Projetar os melhores computadores pessoais do mundo, levando a melhor experiência de computação pessoal a estudantes, educadores, profissionais criativos e consumidores do mundo todo.</p>
-                        </section>
-                    </div>
-                </div> 
+                </aside>
+
+                </div>
             </div>
-        </main>
+        </main> 
+        <footer class="rodape"> 
+            <div class="linksFinais">
+                <h1>Logo</h1>
+                <h2>Seja Bravo</h2> 
+                <h1>links</h1>
+            </div>
+            <div class="linha"></div> 
+            <div class="ano"><h1 id="dataAtual"></h1></div>
+        </footer>
     </header>
     <script src="main.js"></script>
 </body>
