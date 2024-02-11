@@ -10,7 +10,7 @@
 }  
 
 :root{
-    --cor--primária: #052051;
+    --cor--primária: #0d1b2a;
 }
 .principais{
     height: 60px;  
@@ -21,7 +21,7 @@
 .head{
     background-color: var(--cor--primária); 
     padding: 10px; 
-    border-bottom: solid 3px #609ED4;  
+    border-bottom: solid 3px #415a77;  
     width: 100%; 
     position: fixed; 
 }  
@@ -36,7 +36,7 @@
 
 a{
     text-decoration: none; 
-    color: #93ACB5;   
+    color: #e0e1dd;   
     margin: 10px; 
     font-family: 'Merriweather', serif;
     font-size: 1.1rem; 
@@ -45,7 +45,7 @@ a{
 }  
 
 .home{
-    color: white;
+    color: #e0e1dd;
 }
 
 a:hover{
@@ -63,7 +63,7 @@ a:hover{
     gap: 0px;  
     align-items: center;  
     justify-content: center; 
-    background-color: #F2F4FF; 
+    background-color: #e0e1dd; 
     height: 700px; 
     padding-top: 200px;
     
@@ -71,7 +71,7 @@ a:hover{
 
 .texto{
     width: 30%; 
-    color: black; 
+    color: #003049; 
     display: flex;
     flex-direction: column;
     gap: 20px;   
@@ -93,7 +93,7 @@ a:hover{
 } 
 .duas_partes{ 
     padding: 170px;
-    background-color: #F2F4FF; 
+    background-color: #e0e1dd; 
     display: flex;  
     flex-direction: row;  
     justify-content: center ; 
@@ -120,7 +120,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     text-align: center; 
-    color: white; 
+    color: #e0e1dd; 
     word-break: break-all; 
     border-radius: 30px;  
     font-family: 'Oswald', sans-serif; 
@@ -156,7 +156,7 @@ a:hover{
 
 #cursos{
     padding-top: 10%; 
-    background-color: #F2F4FF;  
+    background-color: #e0e1dd;  
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -190,7 +190,7 @@ iframe{
 .bloco{
     width: 100px;
     height: 100px; 
-    background-color: #609ED4;
+    background-color: #1b263b;
 }
 
 .img_cursos1, .img_cursos2{
@@ -202,7 +202,7 @@ iframe{
 .rodape{
     width: 100%; 
     height: 160px;
-    background-color: white; 
+    background-color: var(--cor--primária); 
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -210,11 +210,13 @@ iframe{
 } 
 
 .linha{
-    border: solid 1px var(--cor--primária); 
-    width: 75%;
+    border: solid 1px #e0e1dd; 
+    width: 75%; 
+
 } 
 .linksFinais{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;  
+    color: #e0e1dd;
     
 }
