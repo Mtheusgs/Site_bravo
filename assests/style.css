@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+}   
+
 
 :root{
     --cor--primária: #0d1b2a;
@@ -60,12 +61,12 @@ a:hover{
 .cont_principal{
     display: flex; 
     padding: 25px; 
-    gap: 0px;  
-    align-items: center;  
+    gap: 60px;    
     justify-content: center; 
     background-color: #e0e1dd; 
     height: 700px; 
-    padding-top: 200px;
+    padding-top: 200px;  
+    align-items: center;
     
 } 
 
@@ -89,7 +90,8 @@ a:hover{
     font-size: 2.5rem;
 }
 .pessoa{
-    width: 40%;
+    width: 30%; 
+    border-radius: 30px;
 } 
 .duas_partes{ 
     padding: 170px;
@@ -114,18 +116,19 @@ a:hover{
 }
 .olho_da_empresa{
     background-color: var(--cor--primária);
-    width: 35%; 
-    height: 400px; 
+    width: 70%; 
+    height: 450px; 
     padding: 10px;   
     display: flex;
     flex-direction: column;
     text-align: center; 
     color: #e0e1dd; 
-    word-break: break-all; 
-    border-radius: 30px;  
+    word-break: break-all;  
     font-family: 'Oswald', sans-serif; 
     font-size: 1.5rem; 
-    gap: 15px;
+    gap: 15px; 
+    border-radius: 5px; 
+    align-items: center;
     
 
 }  
@@ -140,10 +143,14 @@ a:hover{
     display: flex;
     flex-direction: row; 
     align-items: center; 
-    gap: 100px; 
+    gap: 50px; 
     margin-right: 0;
 }  
-
+.juncao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .textoMudavel,.mudarTitulo{
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -176,7 +183,7 @@ a:hover{
     font-family: 'Protest Guerrilla', sans-serif ;  
     font-size: 2rem;  
     color: var(--cor--primária);  
-    margin-bottom: 30px;
+    margin-bottom: 46px;
 
 }
 iframe{
@@ -201,7 +208,7 @@ iframe{
 
 .rodape{
     width: 100%; 
-    height: 160px;
+    height: 100px;
     background-color: var(--cor--primária); 
     display: flex;
     flex-direction: column;
@@ -210,13 +217,96 @@ iframe{
 } 
 
 .linha{
-    border: solid 1px #e0e1dd; 
+    border: solid 1px var(--cor--primária); 
     width: 75%; 
 
 } 
 .linksFinais{
     display: flex;
     flex-direction: row;  
-    color: #e0e1dd;
+    color: #000814; 
+    font-family: 'Oswald', sans-serif ;
     
+} 
+
+.contatos{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    justify-content: center;
+}
+
+.g_missão{
+    width: 26%;
+    height: 25%; 
+    margin-left: 55px
+} 
+
+/*CARROSEL*/
+
+.content{
+    width: 800px; 
+    height: 500px; 
+    overflow: hidden;
+
+}  
+.slides{
+    display: flex;
+}
+.navigation{
+    position: absolute;
+    bottom: 300px;
+    left:58%; 
+    transform: translate(50%); 
+    display: flex;
+} 
+input{
+    display: none;
+}
+.bar{
+    border: 2px solid #fff; 
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer; 
+
+} 
+
+.bar:not(:last-child){
+    margin-right: 20px; 
+} 
+
+.bar:hover{
+    background-color: #20a6ff;
+    transition: .4s; 
+}  
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+} 
+.slide{
+    width: 25%;
+    transition: 0.5s;
+} 
+.slide img{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;
+} 
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+} 
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+} 
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
 }
